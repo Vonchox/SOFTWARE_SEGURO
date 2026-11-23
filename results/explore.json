@@ -1,0 +1,96 @@
+{
+  "raw_records": 896,
+  "clean_records": 868,
+  "removed": {
+    "within_split_duplicate": 28
+  },
+  "missing_values": 0,
+  "partitions": {
+    "train": {
+      "size": 620,
+      "projects": [
+        "controlado-agenda",
+        "controlado-almacen",
+        "controlado-biblioteca",
+        "controlado-facturacion",
+        "controlado-reserva"
+      ]
+    },
+    "validation": {
+      "size": 124,
+      "projects": [
+        "controlado-entregas"
+      ]
+    },
+    "test": {
+      "size": 124,
+      "projects": [
+        "controlado-inventario"
+      ]
+    }
+  },
+  "categories": {
+    "A01:2025": 56,
+    "A02:2025": 84,
+    "A03:2025": 0,
+    "A04:2025": 84,
+    "A05:2025": 56,
+    "A06:2025": 0,
+    "A07:2025": 56,
+    "A08:2025": 0,
+    "A09:2025": 0,
+    "A10:2025": 42,
+    "API1:2023": 56,
+    "API2:2023": 56,
+    "API3:2023": 0,
+    "API4:2023": 56,
+    "API5:2023": 0,
+    "API6:2023": 0,
+    "API7:2023": 0,
+    "API8:2023": 84,
+    "API9:2023": 0,
+    "API10:2023": 84
+  },
+  "languages_and_formats": {
+    "Python": 196,
+    "Java": 196,
+    "JavaScript": 196,
+    "TypeScript": 168,
+    "YAML": 28,
+    "Properties": 28,
+    "JSON": 28,
+    "Dockerfile": 28
+  },
+  "vulnerability": {
+    "Vulnerable": 434,
+    "No vulnerable": 434
+  },
+  "signals": {
+    "lookup": 84,
+    "request_input": 448,
+    "owner_scope": 56,
+    "debug": 168,
+    "debug_enabled": 84,
+    "debug_disabled": 84,
+    "transport": 184,
+    "transport_disabled": 84,
+    "transport_enabled": 84,
+    "sql": 112,
+    "sql_composition": 56,
+    "parameter_binding": 63,
+    "token": 112,
+    "token_decode": 56,
+    "token_verify": 56,
+    "handler": 84,
+    "ignored_handler": 42,
+    "error_action": 42,
+    "quantity": 112,
+    "unbounded": 56,
+    "quantity_bound": 56
+  },
+  "line_count": {
+    "min": 1,
+    "median": 2.0,
+    "max": 5
+  }
+}

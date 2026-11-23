@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="228" viewBox="0 0 850 228" role="img">
+<title>F1 macro en validación y prueba</title>
+<rect width="850" height="100%" fill="#f5f7fb" rx="12"/>
+<text x="26" y="39" font-size="24" font-weight="700" fill="#142241">F1 macro en validación y prueba</text>
+<g font-family="system-ui, sans-serif" font-size="15" fill="#253552">
+<text x="26" y="76">logistic · validation</text>
+<rect x="270" y="59" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="59" width="490.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="76">1.000</text>
+<text x="26" y="110">logistic · test</text>
+<rect x="270" y="93" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="93" width="490.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="110">1.000</text>
+<text x="26" y="144">multinomial_nb · validation</text>
+<rect x="270" y="127" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="127" width="490.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="144">1.000</text>
+<text x="26" y="178">multinomial_nb · test</text>
+<rect x="270" y="161" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="161" width="490.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="178">1.000</text>
+</g></svg>

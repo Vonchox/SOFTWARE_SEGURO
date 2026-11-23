@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="364" viewBox="0 0 850 364" role="img">
+<title>Lenguajes y formatos del corpus</title>
+<rect width="850" height="100%" fill="#f5f7fb" rx="12"/>
+<text x="26" y="39" font-size="24" font-weight="700" fill="#142241">Lenguajes y formatos del corpus</text>
+<g font-family="system-ui, sans-serif" font-size="15" fill="#253552">
+<text x="26" y="76">Python</text>
+<rect x="270" y="59" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="59" width="490.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="76">196</text>
+<text x="26" y="110">Java</text>
+<rect x="270" y="93" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="93" width="490.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="110">196</text>
+<text x="26" y="144">JavaScript</text>
+<rect x="270" y="127" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="127" width="490.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="144">196</text>
+<text x="26" y="178">TypeScript</text>
+<rect x="270" y="161" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="161" width="420.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="178">168</text>
+<text x="26" y="212">YAML</text>
+<rect x="270" y="195" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="195" width="70.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="212">28</text>
+<text x="26" y="246">Properties</text>
+<rect x="270" y="229" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="229" width="70.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="246">28</text>
+<text x="26" y="280">JSON</text>
+<rect x="270" y="263" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="263" width="70.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="280">28</text>
+<text x="26" y="314">Dockerfile</text>
+<rect x="270" y="297" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="297" width="70.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="314">28</text>
+</g></svg>

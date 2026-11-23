@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="466" viewBox="0 0 850 466" role="img">
+<title>F1 por categoría en la prueba independiente</title>
+<rect width="850" height="100%" fill="#f5f7fb" rx="12"/>
+<text x="26" y="39" font-size="24" font-weight="700" fill="#142241">F1 por categoría en la prueba independiente</text>
+<g font-family="system-ui, sans-serif" font-size="15" fill="#253552">
+<text x="26" y="76">A01:2025</text>
+<rect x="270" y="59" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="59" width="490.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="76">1.000</text>
+<text x="26" y="110">A02:2025</text>
+<rect x="270" y="93" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="93" width="490.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="110">1.000</text>
+<text x="26" y="144">A04:2025</text>
+<rect x="270" y="127" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="127" width="490.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="144">1.000</text>
+<text x="26" y="178">A05:2025</text>
+<rect x="270" y="161" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="161" width="490.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="178">1.000</text>
+<text x="26" y="212">A07:2025</text>
+<rect x="270" y="195" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="195" width="490.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="212">1.000</text>
+<text x="26" y="246">A10:2025</text>
+<rect x="270" y="229" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="229" width="490.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="246">1.000</text>
+<text x="26" y="280">API10:2023</text>
+<rect x="270" y="263" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="263" width="490.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="280">1.000</text>
+<text x="26" y="314">API1:2023</text>
+<rect x="270" y="297" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="297" width="490.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="314">1.000</text>
+<text x="26" y="348">API2:2023</text>
+<rect x="270" y="331" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="331" width="490.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="348">1.000</text>
+<text x="26" y="382">API4:2023</text>
+<rect x="270" y="365" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="365" width="490.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="382">1.000</text>
+<text x="26" y="416">API8:2023</text>
+<rect x="270" y="399" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="399" width="490.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="416">1.000</text>
+</g></svg>

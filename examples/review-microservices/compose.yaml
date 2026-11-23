@@ -1,0 +1,6 @@
+services:
+  dashboard:
+    build: ./dashboard
+  catalog:
+    build:
+      context: ./catalog

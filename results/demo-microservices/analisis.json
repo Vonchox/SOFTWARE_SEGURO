@@ -1,0 +1,609 @@
+{
+  "schema_version": 1,
+  "project": "demo-microservices",
+  "generated_at": "2026-11-23T16:50:53.488222+00:00",
+  "standards": [
+    "owasp2025",
+    "api2023"
+  ],
+  "model": {
+    "algorithm": "logistic",
+    "sha256": "42ec285a8bc95ae20ed8b3d83a57e2bd0058398861cf6ff872910769ccadb8ce",
+    "confidence": "Puntaje del clasificador sin calibración en entornos de producción."
+  },
+  "catalog": [
+    {
+      "id": "A01:2025",
+      "name": "Broken Access Control",
+      "status": "Evaluada"
+    },
+    {
+      "id": "A02:2025",
+      "name": "Security Misconfiguration",
+      "status": "Evaluada"
+    },
+    {
+      "id": "A03:2025",
+      "name": "Software Supply Chain Failures",
+      "status": "No evaluada"
+    },
+    {
+      "id": "A04:2025",
+      "name": "Cryptographic Failures",
+      "status": "Evaluada"
+    },
+    {
+      "id": "A05:2025",
+      "name": "Injection",
+      "status": "Evaluada"
+    },
+    {
+      "id": "A06:2025",
+      "name": "Insecure Design",
+      "status": "No evaluada"
+    },
+    {
+      "id": "A07:2025",
+      "name": "Authentication Failures",
+      "status": "Evaluada"
+    },
+    {
+      "id": "A08:2025",
+      "name": "Software or Data Integrity Failures",
+      "status": "No evaluada"
+    },
+    {
+      "id": "A09:2025",
+      "name": "Security Logging and Alerting Failures",
+      "status": "No evaluada"
+    },
+    {
+      "id": "A10:2025",
+      "name": "Mishandling of Exceptional Conditions",
+      "status": "Evaluada"
+    },
+    {
+      "id": "API1:2023",
+      "name": "Broken Object Level Authorization",
+      "status": "Evaluada"
+    },
+    {
+      "id": "API2:2023",
+      "name": "Broken Authentication",
+      "status": "Evaluada"
+    },
+    {
+      "id": "API3:2023",
+      "name": "Broken Object Property Level Authorization",
+      "status": "No evaluada"
+    },
+    {
+      "id": "API4:2023",
+      "name": "Unrestricted Resource Consumption",
+      "status": "Evaluada"
+    },
+    {
+      "id": "API5:2023",
+      "name": "Broken Function Level Authorization",
+      "status": "No evaluada"
+    },
+    {
+      "id": "API6:2023",
+      "name": "Unrestricted Access to Sensitive Business Flows",
+      "status": "No evaluada"
+    },
+    {
+      "id": "API7:2023",
+      "name": "Server Side Request Forgery",
+      "status": "No evaluada"
+    },
+    {
+      "id": "API8:2023",
+      "name": "Security Misconfiguration",
+      "status": "Evaluada"
+    },
+    {
+      "id": "API9:2023",
+      "name": "Improper Inventory Management",
+      "status": "No evaluada"
+    },
+    {
+      "id": "API10:2023",
+      "name": "Unsafe Consumption of APIs",
+      "status": "Evaluada"
+    }
+  ],
+  "services": [
+    {
+      "name": "api-gateway",
+      "path": "api-gateway",
+      "technologies": [
+        "Node.js",
+        "TypeScript"
+      ],
+      "source": "compose"
+    },
+    {
+      "name": "order-service",
+      "path": "order-service",
+      "technologies": [
+        "Python"
+      ],
+      "source": "compose"
+    },
+    {
+      "name": "product-service",
+      "path": "product-service",
+      "technologies": [
+        "Docker",
+        "Java"
+      ],
+      "source": "compose"
+    },
+    {
+      "name": "user-service",
+      "path": "user-service",
+      "technologies": [
+        "JavaScript",
+        "Node.js"
+      ],
+      "source": "compose"
+    }
+  ],
+  "findings": [
+    {
+      "id": "VM-ff9ac3fae5c1",
+      "service": "api-gateway",
+      "file": "api-gateway/src/application.ts",
+      "language": "TypeScript",
+      "line": 4,
+      "end_line": 4,
+      "description": "Posible Security Misconfiguration",
+      "evidence": [
+        {
+          "signal": "debug",
+          "description": "Configuración de depuración o de detalle de errores",
+          "lines": [
+            4
+          ]
+        },
+        {
+          "signal": "debug_enabled",
+          "description": "Activación explícita de depuración o detalle",
+          "lines": [
+            4
+          ]
+        }
+      ],
+      "labels": [
+        "A02:2025",
+        "API8:2023"
+      ],
+      "owasp_top10_2025": [
+        "A02:2025"
+      ],
+      "owasp_api_top10_2023": [
+        "API8:2023"
+      ],
+      "cwe": [
+        "CWE-489"
+      ],
+      "confidence": 0.77109,
+      "label_scores": {
+        "A01:2025": 0.07757,
+        "A02:2025": 0.91646,
+        "A04:2025": 0.07891,
+        "A05:2025": 0.07702,
+        "A07:2025": 0.07639,
+        "A10:2025": 0.08118,
+        "API10:2023": 0.07891,
+        "API1:2023": 0.07757,
+        "API2:2023": 0.07639,
+        "API4:2023": 0.07492,
+        "API8:2023": 0.91646
+      },
+      "severity": "Media",
+      "severity_rationale": "El modo de depuración podría exponer detalles internos.",
+      "remediation": [
+        "Deshabilitar la depuración en despliegues y comprobar la configuración efectiva."
+      ],
+      "verification": "Requiere verificación",
+      "confirmed": false
+    },
+    {
+      "id": "VM-3a9df846163b",
+      "service": "api-gateway",
+      "file": "api-gateway/src/application.ts",
+      "language": "TypeScript",
+      "line": 15,
+      "end_line": 15,
+      "description": "Posible Mishandling of Exceptional Conditions",
+      "evidence": [
+        {
+          "signal": "handler",
+          "description": "Captura de una excepción",
+          "lines": [
+            15
+          ]
+        },
+        {
+          "signal": "ignored_handler",
+          "description": "Captura vacía o devolución neutra ante una excepción",
+          "lines": [
+            15
+          ]
+        }
+      ],
+      "labels": [
+        "A10:2025"
+      ],
+      "owasp_top10_2025": [
+        "A10:2025"
+      ],
+      "owasp_api_top10_2023": [],
+      "cwe": [
+        "CWE-390"
+      ],
+      "confidence": 0.68152,
+      "label_scores": {
+        "A01:2025": 0.09661,
+        "A02:2025": 0.10002,
+        "A04:2025": 0.10019,
+        "A05:2025": 0.0984,
+        "A07:2025": 0.09613,
+        "A10:2025": 0.92488,
+        "API10:2023": 0.10019,
+        "API1:2023": 0.09661,
+        "API2:2023": 0.09613,
+        "API4:2023": 0.09406,
+        "API8:2023": 0.10002
+      },
+      "severity": "Media",
+      "severity_rationale": "Ignorar errores puede ocultar fallos y devolver un resultado incoherente.",
+      "remediation": [
+        "Manejar el error explícitamente y devolver un estado seguro o propagarlo de forma controlada."
+      ],
+      "verification": "Requiere verificación",
+      "confirmed": false
+    },
+    {
+      "id": "VM-8ea5d67b368e",
+      "service": "order-service",
+      "file": "order-service/app/orders.py",
+      "language": "Python",
+      "line": 2,
+      "end_line": 3,
+      "description": "Posible Unrestricted Resource Consumption",
+      "evidence": [
+        {
+          "signal": "request_input",
+          "description": "Referencia a entrada o a parámetros de una solicitud",
+          "lines": [
+            1,
+            2
+          ]
+        },
+        {
+          "signal": "quantity",
+          "description": "Operación de listado o tamaño de lote",
+          "lines": [
+            2,
+            3
+          ]
+        },
+        {
+          "signal": "unbounded",
+          "description": "Listado sin límite visible o tamaño tomado de la solicitud",
+          "lines": [
+            2
+          ]
+        }
+      ],
+      "labels": [
+        "API4:2023"
+      ],
+      "owasp_top10_2025": [],
+      "owasp_api_top10_2023": [
+        "API4:2023"
+      ],
+      "cwe": [
+        "CWE-770"
+      ],
+      "confidence": 0.70598,
+      "label_scores": {
+        "A01:2025": 0.1218,
+        "A02:2025": 0.0788,
+        "A04:2025": 0.07836,
+        "A05:2025": 0.10553,
+        "A07:2025": 0.10706,
+        "A10:2025": 0.08528,
+        "API10:2023": 0.07836,
+        "API1:2023": 0.1218,
+        "API2:2023": 0.10706,
+        "API4:2023": 0.90532,
+        "API8:2023": 0.0788
+      },
+      "severity": "Media",
+      "severity_rationale": "Una operación podría consumir más recursos de los previstos.",
+      "remediation": [
+        "Aplicar límites máximos en el servidor y presupuestos de tiempo y consumo."
+      ],
+      "verification": "Requiere verificación",
+      "confirmed": false
+    },
+    {
+      "id": "VM-c7bb6207a522",
+      "service": "product-service",
+      "file": "product-service/src/main/java/lab/ProductExample.java",
+      "language": "Java",
+      "line": 6,
+      "end_line": 6,
+      "description": "Posible Injection",
+      "evidence": [
+        {
+          "signal": "request_input",
+          "description": "Referencia a entrada o a parámetros de una solicitud",
+          "lines": [
+            5,
+            6
+          ]
+        },
+        {
+          "signal": "sql",
+          "description": "Construcción o ejecución de una consulta SQL",
+          "lines": [
+            6
+          ]
+        },
+        {
+          "signal": "sql_composition",
+          "description": "Composición dinámica de texto SQL",
+          "lines": [
+            6
+          ]
+        }
+      ],
+      "labels": [
+        "A05:2025"
+      ],
+      "owasp_top10_2025": [
+        "A05:2025"
+      ],
+      "owasp_api_top10_2023": [],
+      "cwe": [
+        "CWE-89"
+      ],
+      "confidence": 0.69801,
+      "label_scores": {
+        "A01:2025": 0.1149,
+        "A02:2025": 0.08049,
+        "A04:2025": 0.08023,
+        "A05:2025": 0.91636,
+        "A07:2025": 0.10209,
+        "A10:2025": 0.08716,
+        "API10:2023": 0.08023,
+        "API1:2023": 0.1149,
+        "API2:2023": 0.10209,
+        "API4:2023": 0.10035,
+        "API8:2023": 0.08049
+      },
+      "severity": "Alta",
+      "severity_rationale": "Una entrada que llega a la consulta podría alterar su interpretación.",
+      "remediation": [
+        "Usar consultas parametrizadas y verificar el flujo de las entradas hasta la base de datos."
+      ],
+      "verification": "Requiere verificación",
+      "confirmed": false
+    },
+    {
+      "id": "VM-c9e24e35bf67",
+      "service": "product-service",
+      "file": "product-service/src/main/resources/application.properties",
+      "language": "Properties",
+      "line": 1,
+      "end_line": 1,
+      "description": "Posible Cryptographic Failures / Unsafe Consumption of APIs",
+      "evidence": [
+        {
+          "signal": "transport",
+          "description": "Opción de verificación del transporte",
+          "lines": [
+            1
+          ]
+        },
+        {
+          "signal": "transport_disabled",
+          "description": "Verificación de transporte desactivada explícitamente",
+          "lines": [
+            1
+          ]
+        }
+      ],
+      "labels": [
+        "A04:2025",
+        "API10:2023"
+      ],
+      "owasp_top10_2025": [
+        "A04:2025"
+      ],
+      "owasp_api_top10_2023": [
+        "API10:2023"
+      ],
+      "cwe": [
+        "CWE-295"
+      ],
+      "confidence": 0.76824,
+      "label_scores": {
+        "A01:2025": 0.07557,
+        "A02:2025": 0.07644,
+        "A04:2025": 0.92313,
+        "A05:2025": 0.07746,
+        "A07:2025": 0.07278,
+        "A10:2025": 0.07997,
+        "API10:2023": 0.92313,
+        "API1:2023": 0.07557,
+        "API2:2023": 0.07278,
+        "API4:2023": 0.07376,
+        "API8:2023": 0.07644
+      },
+      "severity": "Alta",
+      "severity_rationale": "Un cliente saliente podría aceptar un certificado no confiable.",
+      "remediation": [
+        "Habilitar la validación del certificado y del nombre del servidor. Configurar una CA confiable."
+      ],
+      "verification": "Requiere verificación",
+      "confirmed": false
+    },
+    {
+      "id": "VM-84acd878fa3d",
+      "service": "user-service",
+      "file": "user-service/src/users.js",
+      "language": "JavaScript",
+      "line": 4,
+      "end_line": 4,
+      "description": "Posible Broken Access Control / Broken Object Level Authorization",
+      "evidence": [
+        {
+          "signal": "lookup",
+          "description": "Lectura de un objeto por identificador",
+          "lines": [
+            4
+          ]
+        },
+        {
+          "signal": "request_input",
+          "description": "Referencia a entrada o a parámetros de una solicitud",
+          "lines": [
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "labels": [
+        "A01:2025",
+        "API1:2023"
+      ],
+      "owasp_top10_2025": [
+        "A01:2025"
+      ],
+      "owasp_api_top10_2023": [
+        "API1:2023"
+      ],
+      "cwe": [
+        "CWE-639"
+      ],
+      "confidence": 0.67667,
+      "label_scores": {
+        "A01:2025": 0.89912,
+        "A02:2025": 0.07539,
+        "A04:2025": 0.07476,
+        "A05:2025": 0.11576,
+        "A07:2025": 0.11852,
+        "A10:2025": 0.08232,
+        "API10:2023": 0.07476,
+        "API1:2023": 0.89912,
+        "API2:2023": 0.11852,
+        "API4:2023": 0.11478,
+        "API8:2023": 0.07539
+      },
+      "severity": "Alta",
+      "severity_rationale": "Podrían leerse datos de otra cuenta si la operación es accesible.",
+      "remediation": [
+        "Verificar propiedad y permisos del objeto en el servidor en cada acceso."
+      ],
+      "verification": "Requiere verificación",
+      "confirmed": false
+    },
+    {
+      "id": "VM-d0a6187766fb",
+      "service": "user-service",
+      "file": "user-service/src/users.js",
+      "language": "JavaScript",
+      "line": 11,
+      "end_line": 13,
+      "description": "Posible Authentication Failures / Broken Authentication",
+      "evidence": [
+        {
+          "signal": "request_input",
+          "description": "Referencia a entrada o a parámetros de una solicitud",
+          "lines": [
+            11,
+            12
+          ]
+        },
+        {
+          "signal": "token",
+          "description": "Lectura o verificación de un token",
+          "lines": [
+            11,
+            13
+          ]
+        },
+        {
+          "signal": "token_decode",
+          "description": "Decodificación de los datos del token",
+          "lines": [
+            13
+          ]
+        }
+      ],
+      "labels": [
+        "A07:2025",
+        "API2:2023"
+      ],
+      "owasp_top10_2025": [
+        "A07:2025"
+      ],
+      "owasp_api_top10_2023": [
+        "API2:2023"
+      ],
+      "cwe": [
+        "CWE-347"
+      ],
+      "confidence": 0.7,
+      "label_scores": {
+        "A01:2025": 0.12239,
+        "A02:2025": 0.08053,
+        "A04:2025": 0.07799,
+        "A05:2025": 0.10645,
+        "A07:2025": 0.90155,
+        "A10:2025": 0.08678,
+        "API10:2023": 0.07799,
+        "API1:2023": 0.12239,
+        "API2:2023": 0.90155,
+        "API4:2023": 0.10506,
+        "API8:2023": 0.08053
+      },
+      "severity": "Alta",
+      "severity_rationale": "La identidad podría depender de un token sin firma validada.",
+      "remediation": [
+        "Validar la firma, el algoritmo permitido, el emisor, la audiencia y el vencimiento."
+      ],
+      "verification": "Requiere verificación",
+      "confirmed": false
+    }
+  ],
+  "skipped_files": [],
+  "summary": {
+    "services": 4,
+    "files_analyzed": 12,
+    "files_by_language": {
+      "YAML": 2,
+      "JSON": 2,
+      "TypeScript": 1,
+      "Dependencies": 1,
+      "Python": 1,
+      "Dockerfile": 1,
+      "XML": 1,
+      "Java": 1,
+      "Properties": 1,
+      "JavaScript": 1
+    },
+    "candidates": 7,
+    "potential_findings": 7,
+    "classified": 7,
+    "pending_review": 0,
+    "confirmed": 0
+  }
+}

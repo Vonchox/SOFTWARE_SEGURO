@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="602" viewBox="0 0 850 602" role="img">
+<title>Observaciones estáticas más frecuentes</title>
+<rect width="850" height="100%" fill="#f5f7fb" rx="12"/>
+<text x="26" y="39" font-size="24" font-weight="700" fill="#142241">Observaciones estáticas más frecuentes</text>
+<g font-family="system-ui, sans-serif" font-size="15" fill="#253552">
+<text x="26" y="76">request_input</text>
+<rect x="270" y="59" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="59" width="490.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="76">448</text>
+<text x="26" y="110">transport</text>
+<rect x="270" y="93" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="93" width="201.2" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="110">184</text>
+<text x="26" y="144">debug</text>
+<rect x="270" y="127" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="127" width="183.8" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="144">168</text>
+<text x="26" y="178">sql</text>
+<rect x="270" y="161" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="161" width="122.5" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="178">112</text>
+<text x="26" y="212">token</text>
+<rect x="270" y="195" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="195" width="122.5" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="212">112</text>
+<text x="26" y="246">quantity</text>
+<rect x="270" y="229" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="229" width="122.5" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="246">112</text>
+<text x="26" y="280">lookup</text>
+<rect x="270" y="263" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="263" width="91.9" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="280">84</text>
+<text x="26" y="314">debug_enabled</text>
+<rect x="270" y="297" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="297" width="91.9" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="314">84</text>
+<text x="26" y="348">debug_disabled</text>
+<rect x="270" y="331" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="331" width="91.9" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="348">84</text>
+<text x="26" y="382">transport_disabled</text>
+<rect x="270" y="365" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="365" width="91.9" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="382">84</text>
+<text x="26" y="416">transport_enabled</text>
+<rect x="270" y="399" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="399" width="91.9" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="416">84</text>
+<text x="26" y="450">handler</text>
+<rect x="270" y="433" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="433" width="91.9" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="450">84</text>
+<text x="26" y="484">parameter_binding</text>
+<rect x="270" y="467" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="467" width="68.9" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="484">63</text>
+<text x="26" y="518">owner_scope</text>
+<rect x="270" y="501" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="501" width="61.2" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="518">56</text>
+<text x="26" y="552">sql_composition</text>
+<rect x="270" y="535" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="535" width="61.2" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="552">56</text>
+</g></svg>

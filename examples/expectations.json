@@ -1,0 +1,23 @@
+{
+  "demo-microservices": {
+    "services": ["api-gateway", "user-service", "product-service", "order-service"],
+    "languages": ["Java", "JavaScript", "Python", "TypeScript"],
+    "positive_anchors": [
+      {"file": "api-gateway/src/application.ts", "line": 4, "labels": ["A02:2025", "API8:2023"]},
+      {"file": "api-gateway/src/application.ts", "line": 15, "labels": ["A10:2025"]},
+      {"file": "order-service/app/orders.py", "line": 2, "labels": ["API4:2023"]},
+      {"file": "product-service/src/main/java/lab/ProductExample.java", "line": 6, "labels": ["A05:2025"]},
+      {"file": "product-service/src/main/resources/application.properties", "line": 1, "labels": ["A04:2025", "API10:2023"]},
+      {"file": "user-service/src/users.js", "line": 4, "labels": ["A01:2025", "API1:2023"]},
+      {"file": "user-service/src/users.js", "line": 11, "labels": ["A07:2025", "API2:2023"]}
+    ]
+  },
+  "review-microservices": {
+    "services": ["dashboard", "catalog"],
+    "languages": ["Python", "TypeScript"],
+    "positive_anchors": [
+      {"file": "catalog/app/catalog.py", "line": 18, "labels": ["API4:2023"]},
+      {"file": "dashboard/application.yml", "line": 2, "labels": ["A02:2025", "API8:2023"]}
+    ]
+  }
+}

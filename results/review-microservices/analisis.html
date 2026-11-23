@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VulnMiner · review-microservices</title>
+<style>
+:root{color-scheme:light;font:15px/1.6 system-ui,sans-serif;background:#f4f6fb;color:#15213a}
+body{margin:0 auto;max-width:1060px;padding:32px 22px 64px}
+header{background:#14274d;color:#fff;border-radius:16px;padding:22px 28px;margin-bottom:22px}
+h1,h2,h3{line-height:1.2;margin-top:0}h1{font-size:clamp(25px,4vw,40px);margin-bottom:8px}
+h2{font-size:23px}h3{font-size:17px}.panel{background:#fff;border:1px solid #dce4f1;border-radius:12px;padding:20px;margin:18px 0}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px}
+.metric{background:#edf3ff;border-radius:8px;padding:12px}.metric strong{display:block;font-size:25px;color:#234c94}
+.meta{margin:8px 0;color:#3d4d68}header .meta{color:#d4e3ff}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:8px;vertical-align:top;border-bottom:1px solid #e0e6f0}
+code{overflow-wrap:anywhere}summary{cursor:pointer;font-weight:650}
+details{padding:12px 0;border-top:1px solid #e0e6f0}dl{display:grid;grid-template-columns:minmax(120px,.3fr) 1fr;gap:8px}
+dt{font-weight:650}dd{margin:0}ul{margin:4px 0;padding-left:22px}.table-wrap{overflow:auto}
+@media(max-width:520px){.panel{padding:12px}dl{display:block}dd{margin-bottom:12px}}
+</style>
+</head>
+<body>
+<header><p class="meta">VulnMiner</p><h1>review-microservices</h1>
+<p class="meta">Análisis estático · 2026-11-23T16:50:53.958158+00:00 · logistic</p></header>
+<main>
+<section class="metrics" aria-label="Resumen"><div class='metric'><strong>2</strong>Microservicios</div><div class='metric'><strong>6</strong>Archivos analizados</div><div class='metric'><strong>2</strong>Hallazgos potenciales</div><div class='metric'><strong>2</strong>Clasificados</div><div class='metric'><strong>0</strong>Pendientes de revisión</div></section>
+<section class="panel"><h2>Microservicios</h2><div class='table-wrap'><table><thead><tr><th scope='col'>Microservicio</th><th scope='col'>Ruta</th><th scope='col'>Tecnologías</th><th scope='col'>Descubrimiento</th></tr></thead><tbody><tr><td>catalog</td><td>catalog</td><td>Python</td><td>compose</td></tr><tr><td>dashboard</td><td>dashboard</td><td>Node.js, TypeScript</td><td>compose</td></tr></tbody></table></div></section>
+<section class="panel"><h2>Hallazgos por microservicio</h2>
+<p class="meta">Todos los hallazgos requieren verificación. Puntaje del clasificador sin calibración en entornos de producción.</p><section><h3>dashboard · 2</h3><details><summary>A02:2025, API8:2023 · Posible Security Misconfiguration</summary><dl><dt>Identificador</dt><dd>VM-211e30460399</dd><dt>Ubicación</dt><dd><code>dashboard/application.yml:2</code></dd><dt>Estado</dt><dd>Requiere verificación</dd><dt>CWE sugeridas</dt><dd>CWE-489</dd><dt>Confianza</dt><dd>76.50%</dd><dt>Severidad</dt><dd>Media. El modo de depuración podría exponer detalles internos.</dd><dt>Evidencias</dt><dd><ul><li>Configuración de depuración o de detalle de errores (líneas 2)</li><li>Activación explícita de depuración o detalle (líneas 2)</li></ul></dd><dt>Remediación</dt><dd><ul><li>Deshabilitar la depuración en despliegues y comprobar la configuración efectiva.</li></ul></dd></dl></details><details><summary>A01:2025, API1:2023 · Posible Broken Access Control / Broken Object Level Authorization</summary><dl><dt>Identificador</dt><dd>VM-035f5a0a2704</dd><dt>Ubicación</dt><dd><code>dashboard/src/dashboard.ts:24</code></dd><dt>Estado</dt><dd>Requiere verificación</dd><dt>CWE sugeridas</dt><dd>CWE-639</dd><dt>Confianza</dt><dd>67.55%</dd><dt>Severidad</dt><dd>Alta. Podrían leerse datos de otra cuenta si la operación es accesible.</dd><dt>Evidencias</dt><dd><ul><li>Lectura de un objeto por identificador (líneas 24)</li><li>Referencia a entrada o a parámetros de una solicitud (líneas 22, 23, 24)</li></ul></dd><dt>Remediación</dt><dd><ul><li>Verificar propiedad y permisos del objeto en el servidor en cada acceso.</li></ul></dd></dl></details></section></section>
+<section class="panel"><h2>Cobertura y hallazgos por categoría</h2><div class='table-wrap'><table><thead><tr><th scope='col'>Código</th><th scope='col'>Categoría</th><th scope='col'>Cobertura</th><th scope='col'>Hallazgos</th></tr></thead><tbody><tr><td>A01:2025</td><td>Broken Access Control</td><td>Evaluada</td><td>1</td></tr><tr><td>A02:2025</td><td>Security Misconfiguration</td><td>Evaluada</td><td>1</td></tr><tr><td>A03:2025</td><td>Software Supply Chain Failures</td><td>No evaluada</td><td>0</td></tr><tr><td>A04:2025</td><td>Cryptographic Failures</td><td>Evaluada</td><td>0</td></tr><tr><td>A05:2025</td><td>Injection</td><td>Evaluada</td><td>0</td></tr><tr><td>A06:2025</td><td>Insecure Design</td><td>No evaluada</td><td>0</td></tr><tr><td>A07:2025</td><td>Authentication Failures</td><td>Evaluada</td><td>0</td></tr><tr><td>A08:2025</td><td>Software or Data Integrity Failures</td><td>No evaluada</td><td>0</td></tr><tr><td>A09:2025</td><td>Security Logging and Alerting Failures</td><td>No evaluada</td><td>0</td></tr><tr><td>A10:2025</td><td>Mishandling of Exceptional Conditions</td><td>Evaluada</td><td>0</td></tr><tr><td>API1:2023</td><td>Broken Object Level Authorization</td><td>Evaluada</td><td>1</td></tr><tr><td>API2:2023</td><td>Broken Authentication</td><td>Evaluada</td><td>0</td></tr><tr><td>API3:2023</td><td>Broken Object Property Level Authorization</td><td>No evaluada</td><td>0</td></tr><tr><td>API4:2023</td><td>Unrestricted Resource Consumption</td><td>Evaluada</td><td>0</td></tr><tr><td>API5:2023</td><td>Broken Function Level Authorization</td><td>No evaluada</td><td>0</td></tr><tr><td>API6:2023</td><td>Unrestricted Access to Sensitive Business Flows</td><td>No evaluada</td><td>0</td></tr><tr><td>API7:2023</td><td>Server Side Request Forgery</td><td>No evaluada</td><td>0</td></tr><tr><td>API8:2023</td><td>Security Misconfiguration</td><td>Evaluada</td><td>1</td></tr><tr><td>API9:2023</td><td>Improper Inventory Management</td><td>No evaluada</td><td>0</td></tr><tr><td>API10:2023</td><td>Unsafe Consumption of APIs</td><td>Evaluada</td><td>0</td></tr></tbody></table></div></section>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vulnminer"
+version = "1.0.0"
+description = "Clasificador estático de hallazgos potenciales en microservicios"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+vulnminer = "vulnminer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["vulnminer"]
+
+[tool.setuptools.package-data]
+vulnminer = ["model.json"]

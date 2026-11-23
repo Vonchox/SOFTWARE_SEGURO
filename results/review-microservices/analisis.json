@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "project": "review-microservices",
+  "generated_at": "2026-11-23T16:50:53.958158+00:00",
+  "standards": [
+    "owasp2025",
+    "api2023"
+  ],
+  "model": {
+    "algorithm": "logistic",
+    "sha256": "42ec285a8bc95ae20ed8b3d83a57e2bd0058398861cf6ff872910769ccadb8ce",
+    "confidence": "Puntaje del clasificador sin calibración en entornos de producción."
+  },
+  "catalog": [
+    {
+      "id": "A01:2025",
+      "name": "Broken Access Control",
+      "status": "Evaluada"
+    },
+    {
+      "id": "A02:2025",
+      "name": "Security Misconfiguration",
+      "status": "Evaluada"
+    },
+    {
+      "id": "A03:2025",
+      "name": "Software Supply Chain Failures",
+      "status": "No evaluada"
+    },
+    {
+      "id": "A04:2025",
+      "name": "Cryptographic Failures",
+      "status": "Evaluada"
+    },
+    {
+      "id": "A05:2025",
+      "name": "Injection",
+      "status": "Evaluada"
+    },
+    {
+      "id": "A06:2025",
+      "name": "Insecure Design",
+      "status": "No evaluada"
+    },
+    {
+      "id": "A07:2025",
+      "name": "Authentication Failures",
+      "status": "Evaluada"
+    },
+    {
+      "id": "A08:2025",
+      "name": "Software or Data Integrity Failures",
+      "status": "No evaluada"
+    },
+    {
+      "id": "A09:2025",
+      "name": "Security Logging and Alerting Failures",
+      "status": "No evaluada"
+    },
+    {
+      "id": "A10:2025",
+      "name": "Mishandling of Exceptional Conditions",
+      "status": "Evaluada"
+    },
+    {
+      "id": "API1:2023",
+      "name": "Broken Object Level Authorization",
+      "status": "Evaluada"
+    },
+    {
+      "id": "API2:2023",
+      "name": "Broken Authentication",
+      "status": "Evaluada"
+    },
+    {
+      "id": "API3:2023",
+      "name": "Broken Object Property Level Authorization",
+      "status": "No evaluada"
+    },
+    {
+      "id": "API4:2023",
+      "name": "Unrestricted Resource Consumption",
+      "status": "Evaluada"
+    },
+    {
+      "id": "API5:2023",
+      "name": "Broken Function Level Authorization",
+      "status": "No evaluada"
+    },
+    {
+      "id": "API6:2023",
+      "name": "Unrestricted Access to Sensitive Business Flows",
+      "status": "No evaluada"
+    },
+    {
+      "id": "API7:2023",
+      "name": "Server Side Request Forgery",
+      "status": "No evaluada"
+    },
+    {
+      "id": "API8:2023",
+      "name": "Security Misconfiguration",
+      "status": "Evaluada"
+    },
+    {
+      "id": "API9:2023",
+      "name": "Improper Inventory Management",
+      "status": "No evaluada"
+    },
+    {
+      "id": "API10:2023",
+      "name": "Unsafe Consumption of APIs",
+      "status": "Evaluada"
+    }
+  ],
+  "services": [
+    {
+      "name": "catalog",
+      "path": "catalog",
+      "technologies": [
+        "Python"
+      ],
+      "source": "compose"
+    },
+    {
+      "name": "dashboard",
+      "path": "dashboard",
+      "technologies": [
+        "Node.js",
+        "TypeScript"
+      ],
+      "source": "compose"
+    }
+  ],
+  "findings": [
+    {
+      "id": "VM-211e30460399",
+      "service": "dashboard",
+      "file": "dashboard/application.yml",
+      "language": "YAML",
+      "line": 2,
+      "end_line": 2,
+      "description": "Posible Security Misconfiguration",
+      "evidence": [
+        {
+          "signal": "debug",
+          "description": "Configuración de depuración o de detalle de errores",
+          "lines": [
+            2
+          ]
+        },
+        {
+          "signal": "debug_enabled",
+          "description": "Activación explícita de depuración o detalle",
+          "lines": [
+            2
+          ]
+        }
+      ],
+      "labels": [
+        "A02:2025",
+        "API8:2023"
+      ],
+      "owasp_top10_2025": [
+        "A02:2025"
+      ],
+      "owasp_api_top10_2023": [
+        "API8:2023"
+      ],
+      "cwe": [
+        "CWE-489"
+      ],
+      "confidence": 0.76496,
+      "label_scores": {
+        "A01:2025": 0.07748,
+        "A02:2025": 0.90518,
+        "A04:2025": 0.08438,
+        "A05:2025": 0.07839,
+        "A07:2025": 0.07732,
+        "A10:2025": 0.08458,
+        "API10:2023": 0.08438,
+        "API1:2023": 0.07748,
+        "API2:2023": 0.07732,
+        "API4:2023": 0.07578,
+        "API8:2023": 0.90518
+      },
+      "severity": "Media",
+      "severity_rationale": "El modo de depuración podría exponer detalles internos.",
+      "remediation": [
+        "Deshabilitar la depuración en despliegues y comprobar la configuración efectiva."
+      ],
+      "verification": "Requiere verificación",
+      "confirmed": false
+    },
+    {
+      "id": "VM-035f5a0a2704",
+      "service": "dashboard",
+      "file": "dashboard/src/dashboard.ts",
+      "language": "TypeScript",
+      "line": 24,
+      "end_line": 24,
+      "description": "Posible Broken Access Control / Broken Object Level Authorization",
+      "evidence": [
+        {
+          "signal": "lookup",
+          "description": "Lectura de un objeto por identificador",
+          "lines": [
+            24
+          ]
+        },
+        {
+          "signal": "request_input",
+          "description": "Referencia a entrada o a parámetros de una solicitud",
+          "lines": [
+            22,
+            23,
+            24
+          ]
+        }
+      ],
+      "labels": [
+        "A01:2025",
+        "API1:2023"
+      ],
+      "owasp_top10_2025": [
+        "A01:2025"
+      ],
+      "owasp_api_top10_2023": [
+        "API1:2023"
+      ],
+      "cwe": [
+        "CWE-639"
+      ],
+      "confidence": 0.67554,
+      "label_scores": {
+        "A01:2025": 0.90028,
+        "A02:2025": 0.07568,
+        "A04:2025": 0.07507,
+        "A05:2025": 0.11519,
+        "A07:2025": 0.11779,
+        "A10:2025": 0.08167,
+        "API10:2023": 0.07507,
+        "API1:2023": 0.90028,
+        "API2:2023": 0.11779,
+        "API4:2023": 0.11396,
+        "API8:2023": 0.07568
+      },
+      "severity": "Alta",
+      "severity_rationale": "Podrían leerse datos de otra cuenta si la operación es accesible.",
+      "remediation": [
+        "Verificar propiedad y permisos del objeto en el servidor en cada acceso."
+      ],
+      "verification": "Requiere verificación",
+      "confirmed": false
+    }
+  ],
+  "skipped_files": [],
+  "summary": {
+    "services": 2,
+    "files_analyzed": 6,
+    "files_by_language": {
+      "YAML": 2,
+      "TOML": 1,
+      "Python": 1,
+      "JSON": 1,
+      "TypeScript": 1
+    },
+    "candidates": 6,
+    "potential_findings": 2,
+    "classified": 2,
+    "pending_review": 0,
+    "confirmed": 0
+  }
+}

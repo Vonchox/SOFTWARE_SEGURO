@@ -1,0 +1,10 @@
+services:
+  api-gateway:
+    build:
+      context: ./api-gateway
+  user-service:
+    build: ./user-service
+  product-service:
+    build: ./product-service
+  order-service:
+    build: ./order-service

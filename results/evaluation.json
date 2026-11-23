@@ -1,0 +1,1357 @@
+{
+  "selection": "Mayor F1 macro en validación. Desempate por F1 binario y coincidencia exacta. Si persiste el empate se usa el primer candidato del orden declarado. La regresión logística tiene prioridad porque ajusta cada salida sin asumir independencia entre observaciones.",
+  "selected": "logistic",
+  "parameter": 0.008,
+  "evaluated_labels": [
+    "A01:2025",
+    "A02:2025",
+    "A04:2025",
+    "A05:2025",
+    "A07:2025",
+    "A10:2025",
+    "API10:2023",
+    "API1:2023",
+    "API2:2023",
+    "API4:2023",
+    "API8:2023"
+  ],
+  "not_evaluated": [
+    "A03:2025",
+    "A06:2025",
+    "A08:2025",
+    "A09:2025",
+    "API3:2023",
+    "API5:2023",
+    "API6:2023",
+    "API7:2023",
+    "API9:2023"
+  ],
+  "trials": [
+    {
+      "algorithm": "logistic",
+      "parameter": 0.008,
+      "thresholds": {
+        "risk": 0.5,
+        "A01:2025": 0.6,
+        "A02:2025": 0.6,
+        "A04:2025": 0.6,
+        "A05:2025": 0.6,
+        "A07:2025": 0.6,
+        "A10:2025": 0.6,
+        "API10:2023": 0.6,
+        "API1:2023": 0.6,
+        "API2:2023": 0.6,
+        "API4:2023": 0.6,
+        "API8:2023": 0.6
+      },
+      "validation": {
+        "records": 124,
+        "binary": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 62,
+          "matrix": {
+            "tn": 62,
+            "fp": 0,
+            "fn": 0,
+            "tp": 62
+          }
+        },
+        "macro_f1": 1.0,
+        "exact_match": 1.0,
+        "by_category": {
+          "A01:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A02:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "A04:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "A05:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A07:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A10:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 6,
+            "matrix": {
+              "tn": 118,
+              "fp": 0,
+              "fn": 0,
+              "tp": 6
+            }
+          },
+          "API10:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "API1:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API2:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API4:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API8:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "algorithm": "logistic",
+      "parameter": 0.025,
+      "thresholds": {
+        "risk": 0.5,
+        "A01:2025": 0.6,
+        "A02:2025": 0.6,
+        "A04:2025": 0.6,
+        "A05:2025": 0.6,
+        "A07:2025": 0.6,
+        "A10:2025": 0.6,
+        "API10:2023": 0.6,
+        "API1:2023": 0.6,
+        "API2:2023": 0.6,
+        "API4:2023": 0.6,
+        "API8:2023": 0.6
+      },
+      "validation": {
+        "records": 124,
+        "binary": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 62,
+          "matrix": {
+            "tn": 62,
+            "fp": 0,
+            "fn": 0,
+            "tp": 62
+          }
+        },
+        "macro_f1": 1.0,
+        "exact_match": 1.0,
+        "by_category": {
+          "A01:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A02:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "A04:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "A05:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A07:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A10:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 6,
+            "matrix": {
+              "tn": 118,
+              "fp": 0,
+              "fn": 0,
+              "tp": 6
+            }
+          },
+          "API10:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "API1:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API2:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API4:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API8:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "algorithm": "multinomial_nb",
+      "parameter": 0.06,
+      "thresholds": {
+        "risk": 0.5,
+        "A01:2025": 0.6,
+        "A02:2025": 0.6,
+        "A04:2025": 0.6,
+        "A05:2025": 0.6,
+        "A07:2025": 0.6,
+        "A10:2025": 0.6,
+        "API10:2023": 0.6,
+        "API1:2023": 0.6,
+        "API2:2023": 0.6,
+        "API4:2023": 0.6,
+        "API8:2023": 0.6
+      },
+      "validation": {
+        "records": 124,
+        "binary": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 62,
+          "matrix": {
+            "tn": 62,
+            "fp": 0,
+            "fn": 0,
+            "tp": 62
+          }
+        },
+        "macro_f1": 1.0,
+        "exact_match": 1.0,
+        "by_category": {
+          "A01:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A02:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "A04:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "A05:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A07:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A10:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 6,
+            "matrix": {
+              "tn": 118,
+              "fp": 0,
+              "fn": 0,
+              "tp": 6
+            }
+          },
+          "API10:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "API1:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API2:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API4:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API8:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "algorithm": "multinomial_nb",
+      "parameter": 0.3,
+      "thresholds": {
+        "risk": 0.5,
+        "A01:2025": 0.6,
+        "A02:2025": 0.6,
+        "A04:2025": 0.6,
+        "A05:2025": 0.6,
+        "A07:2025": 0.6,
+        "A10:2025": 0.6,
+        "API10:2023": 0.6,
+        "API1:2023": 0.6,
+        "API2:2023": 0.6,
+        "API4:2023": 0.6,
+        "API8:2023": 0.6
+      },
+      "validation": {
+        "records": 124,
+        "binary": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 62,
+          "matrix": {
+            "tn": 62,
+            "fp": 0,
+            "fn": 0,
+            "tp": 62
+          }
+        },
+        "macro_f1": 1.0,
+        "exact_match": 1.0,
+        "by_category": {
+          "A01:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A02:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "A04:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "A05:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A07:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A10:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 6,
+            "matrix": {
+              "tn": 118,
+              "fp": 0,
+              "fn": 0,
+              "tp": 6
+            }
+          },
+          "API10:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "API1:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API2:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API4:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API8:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          }
+        },
+        "errors": []
+      }
+    }
+  ],
+  "comparison": [
+    {
+      "algorithm": "logistic",
+      "parameter": 0.008,
+      "thresholds": {
+        "risk": 0.5,
+        "A01:2025": 0.6,
+        "A02:2025": 0.6,
+        "A04:2025": 0.6,
+        "A05:2025": 0.6,
+        "A07:2025": 0.6,
+        "A10:2025": 0.6,
+        "API10:2023": 0.6,
+        "API1:2023": 0.6,
+        "API2:2023": 0.6,
+        "API4:2023": 0.6,
+        "API8:2023": 0.6
+      },
+      "validation": {
+        "records": 124,
+        "binary": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 62,
+          "matrix": {
+            "tn": 62,
+            "fp": 0,
+            "fn": 0,
+            "tp": 62
+          }
+        },
+        "macro_f1": 1.0,
+        "exact_match": 1.0,
+        "by_category": {
+          "A01:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A02:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "A04:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "A05:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A07:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A10:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 6,
+            "matrix": {
+              "tn": 118,
+              "fp": 0,
+              "fn": 0,
+              "tp": 6
+            }
+          },
+          "API10:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "API1:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API2:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API4:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API8:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          }
+        },
+        "errors": []
+      },
+      "test": {
+        "records": 124,
+        "binary": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 62,
+          "matrix": {
+            "tn": 62,
+            "fp": 0,
+            "fn": 0,
+            "tp": 62
+          }
+        },
+        "macro_f1": 1.0,
+        "exact_match": 1.0,
+        "by_category": {
+          "A01:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A02:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "A04:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "A05:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A07:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A10:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 6,
+            "matrix": {
+              "tn": 118,
+              "fp": 0,
+              "fn": 0,
+              "tp": 6
+            }
+          },
+          "API10:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "API1:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API2:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API4:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API8:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "algorithm": "multinomial_nb",
+      "parameter": 0.06,
+      "thresholds": {
+        "risk": 0.5,
+        "A01:2025": 0.6,
+        "A02:2025": 0.6,
+        "A04:2025": 0.6,
+        "A05:2025": 0.6,
+        "A07:2025": 0.6,
+        "A10:2025": 0.6,
+        "API10:2023": 0.6,
+        "API1:2023": 0.6,
+        "API2:2023": 0.6,
+        "API4:2023": 0.6,
+        "API8:2023": 0.6
+      },
+      "validation": {
+        "records": 124,
+        "binary": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 62,
+          "matrix": {
+            "tn": 62,
+            "fp": 0,
+            "fn": 0,
+            "tp": 62
+          }
+        },
+        "macro_f1": 1.0,
+        "exact_match": 1.0,
+        "by_category": {
+          "A01:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A02:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "A04:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "A05:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A07:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A10:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 6,
+            "matrix": {
+              "tn": 118,
+              "fp": 0,
+              "fn": 0,
+              "tp": 6
+            }
+          },
+          "API10:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "API1:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API2:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API4:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API8:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          }
+        },
+        "errors": []
+      },
+      "test": {
+        "records": 124,
+        "binary": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 62,
+          "matrix": {
+            "tn": 62,
+            "fp": 0,
+            "fn": 0,
+            "tp": 62
+          }
+        },
+        "macro_f1": 1.0,
+        "exact_match": 1.0,
+        "by_category": {
+          "A01:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A02:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "A04:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "A05:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A07:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "A10:2025": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 6,
+            "matrix": {
+              "tn": 118,
+              "fp": 0,
+              "fn": 0,
+              "tp": 6
+            }
+          },
+          "API10:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          },
+          "API1:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API2:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API4:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "matrix": {
+              "tn": 116,
+              "fp": 0,
+              "fn": 0,
+              "tp": 8
+            }
+          },
+          "API8:2023": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12,
+            "matrix": {
+              "tn": 112,
+              "fp": 0,
+              "fn": 0,
+              "tp": 12
+            }
+          }
+        },
+        "errors": []
+      }
+    }
+  ]
+}

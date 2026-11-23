@@ -1,0 +1,1 @@
+# Muestra para inspección estática. No tiene dependencias de ejecución.

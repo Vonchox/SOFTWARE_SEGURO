@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="160" viewBox="0 0 850 160" role="img">
+<title>Ejemplos vulnerables y no vulnerables</title>
+<rect width="850" height="100%" fill="#f5f7fb" rx="12"/>
+<text x="26" y="39" font-size="24" font-weight="700" fill="#142241">Ejemplos vulnerables y no vulnerables</text>
+<g font-family="system-ui, sans-serif" font-size="15" fill="#253552">
+<text x="26" y="76">Vulnerable</text>
+<rect x="270" y="59" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="59" width="490.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="76">434</text>
+<text x="26" y="110">No vulnerable</text>
+<rect x="270" y="93" width="490" height="23" rx="4" fill="#dfe7f2"/>
+<rect x="270" y="93" width="490.0" height="23" rx="4" fill="#2359aa"/>
+<text x="775" y="110">434</text>
+</g></svg>
